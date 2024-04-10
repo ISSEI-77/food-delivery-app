@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hunger-Hunter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'style1.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-logo">
+            <div class="logo">
+              
+              <img
+                src="static/Hungery-removebg-preview.png"
+                alt="Image"
+                width="50"
+                height="50"
+              />
+            </div>
+          </div>
+   
+          <a class="navbar-brand" href="#">Hunger-Hunter</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-user"></i> Restaurant Owner</a
+              >
+            </li>
+            <li>
+              <a {% csrf_token %} href="templates/sign-up.html"><i class="fa-solid fa-user-plus"></i> Register</a>
+            </li>
+            <li>
+              <a href="templates/sign.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-cart-plus"></i> Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+ 
+      </ol>
+
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="static/briyani.avif" alt="Image" width="1200" height="300" />
+        </div>
+
+        <div class="item">
+          <img src="static/burger.jpg" alt="Image" width="1200" height="300" />
+        </div>
+
+        <div class="item">
+          <img
+            src="static/fresh-cocktails-wooden-table-with-leafs-generative-ai.jpg"
+            alt="Image"
+            width="1200"
+            height="300"
+          />
+        </div>
+
+       
+        <div class="item">
+          <img
+            src="static/kebab.jpg"
+            alt="Additional Image"
+            width="1200"
+            height="300"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a
+        class="left carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a
+        class="right carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-right"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+ 
+    <class="restaurant">
+      <div class="list">
+        <img src="static/spiceandmagic.jpg" alt="Image" width="120" height="100" />
+        <h3>Tea Time & Spice Magic</h3>
+      </div>
+      <div class="list">
+        <img src="static/mad.jpeg" alt="Image" width="120" height="100" />
+        <h3>Madras Coffee Filter</h3>
+      </div>
+      <div class="list">
+        <img src="static/DS.jpg" alt="Image" width="120" height="100" />
+        <h3>DS Family Restaurant</h3>
+      </div>
+      <div class="list">
+        <img src="static/MIB.jpg" alt="Image" width="120" height="100" />
+        <h3>Mana Inti Bojanam</h3>
+      </div>
+      <div class="list">
+        <img src="static/lucky.jpg" alt="Image" width="120" height="100" />
+        <h3>Lucky Restaurant</h3>
+      </div>
+    </div>
+  </body>
+</html>
