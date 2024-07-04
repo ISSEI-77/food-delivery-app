@@ -1,0 +1,463 @@
+.html {
+  height: 100vh;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 97vh;
+  background-color: rgb(240, 240, 240);
+
+  /* position: fixed; */
+  top: 0;
+  bottom: 0;
+}
+
+.conatiner-fluid {
+  width: fit-content;
+  height: 30px;
+
+
+}
+
+
+.navbar {
+  background-color: black;
+  margin-bottom: 0;
+  border-radius: 0;
+  font-weight: lighter;
+  /* font-size:x-large; */
+  align-content: space-evenly;
+
+}
+
+.nav-logo {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.logo {
+  background-image: url(Hungery-removebg-preview.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  /* Align items vertically */
+}
+
+.nav-logo {
+  margin-right: 10px;
+  /* Add some spacing between logo and brand text */
+}
+
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.navbar-header {
+  padding: 1px;
+
+}
+
+.html{
+  height: 100vh;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.restaurant{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.list{
+  flex: 0 1 200px;
+  background-color: #f9f9f9;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.list:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.list img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.list h3 {
+  margin: 0;
+}
+
+.list p {
+  margin: 5px 0;
+}
+
+
+.list:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ccc;
+  margin: 10px auto 0;
+  cursor: pointer;
+}
+/* 
+collapse */
+
+.collapsible {
+  background-color: #10c8f6;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 30px;
+  border-radius: 40px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+}
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-between;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 10px; /* Add padding to the container */
+}
+.list {
+  flex: 0 1 calc(50% - 20px); /* Two items per row with space for margin */
+  margin-bottom: 1px; /* Space between rows */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 1px; /* Add padding to the item */
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  
+}
+.list img {
+  display: block;
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Preserve aspect ratio */
+  margin-bottom: 10px;
+}
+.add-to-cart {
+  width: 100%; /* Make the button fill the container */
+}
+.active, .collapsible:hover {
+  background-color: #0b97fb;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity button {
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.quantity input {
+  width: 40px;
+  text-align: center;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.carousel .item {
+  height: 300px;
+
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+
+
+}
+
+.item img:hover {
+  opacity: 0.4;
+}
+
+
+
+.carousel-caption {
+  /* width: 60%;
+  height: 30px; */
+  padding: 2px;
+  font-weight: bold;
+  /* background-image:url(Hunger.png); */
+
+}
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 300px;
+  height: auto;
+}
+
+
+
+
+
+/* footer  */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: beige;
+  color: black;
+  text-align: center;
+}
+
+.carousel-inner img {
+  width: 100%;
+  margin: auto;
+  min-height: 300px;
+}
+
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background: #3B5998;
+}
+
+.twitter-bg {
+  background: #55ACEE;
+}
+
+.google-bg {
+  background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #202020;
+  padding: 15px 0;
+
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #878787;
+
+}
+
+.copyright-text p a {
+  color: #ff5e14;
+  text-align: center;
+}
